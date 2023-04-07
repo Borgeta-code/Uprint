@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 h-20 z-50 bg-[#000000d2] w-screen">
+      <header className="fixed top-0 h-20 z-50 bg-[#000000e0] w-screen">
         <nav className="relative w-full flex justify-center items-center p-4">
           <Image src={logo} alt="logo" className="w-[100px]" />
           <div className="absolute right-2">
