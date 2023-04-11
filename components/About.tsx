@@ -5,7 +5,7 @@ import Title from "./Title";
 import Image from "next/image";
 import speed from "../public/speed.svg";
 import efficiency from "../public/efficiency.svg";
-import quality from "../public/quality2.svg";
+import quality from "../public/quality.svg";
 
 export default function About() {
   const item = {
@@ -48,7 +48,7 @@ export default function About() {
           <h1 className="font-bold text-2xl md:text-5xl">
             Nosso foco é sua <span className="gradient">satisfação</span>.
           </h1>
-          <span className="font-semibold text-[12px] md:text-[15px] opacity-50 w-[90vw] md:w-[700px]">
+          <span className="font-semibold text-[11px] md:text-[15px] opacity-50 w-[90vw] md:w-[700px]">
             Somos uma equipe especializada em estilização, impressão e
             instalação de pistas de dança personalizadas que agregam valor ao
             seu evento, com uma abordagem eficaz e um olhar atento aos detalhes.
@@ -69,8 +69,8 @@ export default function About() {
             variants={item}
             className="flex flex-col justify-center items-center gap-2 md:gap-3"
           >
-            <Image src={speed} alt="velocidade" className=" w-12 md:w-[75px]" />
-            <span className="font-semibold opacity-50 ">Velocidade.</span>
+            <Image src={speed} alt="velocidade" className=" w-12 md:w-20" />
+            <span className="font-semibold text-[#c1c1c1]">Velocidade.</span>
           </motion.li>
 
           <motion.li variants={item}>
@@ -84,7 +84,7 @@ export default function About() {
                 delay: 1.8,
               }}
               viewport={{ once: true }}
-              className="h-[2px] bg-black w-6 md:w-14 opacity-30 rounded-md"
+              className="h-[2px] bg-black w-6 md:w-14 opacity-10 rounded-md"
             />
           </motion.li>
 
@@ -93,7 +93,7 @@ export default function About() {
             className="flex flex-col justify-center items-center gap-2"
           >
             <Image src={efficiency} alt="eficiência" className="w-12 md:w-20" />
-            <span className="font-semibold opacity-50 ">Eficiência.</span>
+            <span className="font-semibold text-[#c1c1c1]">Eficiência.</span>
           </motion.li>
 
           <motion.li variants={item}>
@@ -107,7 +107,7 @@ export default function About() {
                 delay: 1.8,
               }}
               viewport={{ once: true }}
-              className="h-[2px] bg-black w-6 md:w-14 opacity-30 rounded-md"
+              className="h-[2px] bg-black w-6 md:w-14 opacity-10 rounded-md"
             />
           </motion.li>
 
@@ -116,7 +116,7 @@ export default function About() {
             className="flex flex-col justify-center items-center gap-2"
           >
             <Image src={quality} alt="qualidade" className="w-12 md:w-20" />
-            <span className="font-semibold opacity-50 ">Qualidade.</span>
+            <span className="font-semibold text-[#c1c1c1]">Qualidade.</span>
           </motion.li>
         </motion.ul>
       </section>

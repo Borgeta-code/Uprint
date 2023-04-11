@@ -34,11 +34,11 @@ export default function Homescreen() {
             </button>
           </motion.div>
           <div className="flex justify-center items-center gap-6">
-            <div className="h-[2px] bg-black w-8 opacity-30 rounded-md" />
-            <span className="text-sm text-black opacity-30 font-medium">
+            <div className="h-[2px] bg-black w-8 opacity-20 rounded-md" />
+            <span className="text-sm text-black opacity-20 font-medium">
               ou
             </span>
-            <div className="h-[2px] bg-black w-8 opacity-30 rounded-md" />
+            <div className="h-[2px] bg-black w-8 opacity-20 rounded-md" />
           </div>
           <div className="flex flex-col justify-center items-center gap-2">
             <a href="" className="font-bold text-base -mb-1">

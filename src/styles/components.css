@@ -4,6 +4,10 @@
   background-image: url("../../public/HomeBg.svg");
 }
 
+.bgFooter {
+  background-image: url("../../public/FooterBg.svg");
+}
+
 .gradient {
   background: linear-gradient(
     90deg,
@@ -31,19 +35,16 @@
   background: conic-gradient(
     from 0deg at 50% 50%,
     #5100cc -22.12deg,
-    #0050ab 17.27deg,
     #1583ff 48.31deg,
-    #29cf00 89.86deg,
-    #00b728 106.77deg,
-    #f9d100 142.26deg,
+    #31f700 89.86deg,
+    rgb(65, 255, 18) 142.26deg,
     #ff9900 164.59deg,
     #ef0000 185.53deg,
     #dc0000 204.6deg,
     #ff056e 234.66deg,
     #6800ba 270.15deg,
     #9815ff 295.61deg,
-    #5100cc 337.88deg,
-    #0050ab 377.27deg
+    #5100cc 337.88deg
   );
   border-radius: 40px;
 
@@ -56,6 +57,34 @@
   to {
     filter: hue-rotate(1turn);
   }
+}
+
+.gradientInput {
+  background: linear-gradient(
+    89.17deg,
+    #1583ff 5.43%,
+    #00cf2d 24.1%,
+    #f9d100 42.41%,
+    rgba(242, 102, 0, 0.913779) 55.85%,
+    #ef0000 81.05%,
+    #9815ff 89.46%,
+    #5100cc 102.9%
+  );
+  border-radius: 15px;
+}
+
+.gradientTextarea {
+  background: linear-gradient(
+    89.17deg,
+    #1583ff 5.43%,
+    #00cf2d 24.1%,
+    #f9d100 42.41%,
+    rgba(242, 102, 0, 0.913779) 55.85%,
+    #ef0000 81.05%,
+    #9815ff 89.46%,
+    #5100cc 102.9%
+  );
+  border-radius: 20px;
 }
 
 .gradientUnderline {
