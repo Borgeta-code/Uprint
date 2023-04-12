@@ -31,7 +31,9 @@ export default function About() {
 
   return (
     <>
-      <section className="h-screen flex flex-col justify-center items-center bg-cover bg-no-repeat relative ">
+      <section 
+      id="about"
+      className="h-screen flex flex-col justify-center items-center bg-cover bg-no-repeat relative ">
         <Title title="Sobre" />
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -67,9 +69,9 @@ export default function About() {
         >
           <motion.li
             variants={item}
-            className="flex flex-col justify-center items-center gap-2 md:gap-3"
+            className="flex flex-col justify-center items-center gap-2"
           >
-            <Image src={speed} alt="velocidade" className=" w-12 md:w-20" />
+            <Image src={speed} alt="velocidade" className="w-12 md:w-20" />
             <span className="font-semibold text-[#c1c1c1]">Velocidade.</span>
           </motion.li>
 

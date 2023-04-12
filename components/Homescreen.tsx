@@ -3,6 +3,27 @@ import Image from "next/image";
 import arrowDown from "../public/ArrowDown.svg";
 
 export default function Homescreen() {
+
+  const smoothScrollToContact = () => {
+    const contact = document.getElementById("contact");
+    if (contact !== null) {
+      contact.scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const smoothScrollToAbout = () => {
+    const contact = document.getElementById("about");
+    if (contact !== null) {
+      contact.scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <section className="h-screen flex justify-center items-center bgHome bg-cover bg-no-repeat relative">
@@ -24,30 +45,32 @@ export default function Homescreen() {
             Entre em contato para discutir suas ideias e fazer um orçamento!
           </span>
           <motion.div
-            whileHover={{ opacity: 1, scale: 1.1 }}
-            whileTap={{ opacity: 0.7, scale: 1 }}
-            transition={{ type: "spring", stiffness: 200, damping: 17 }}
+            whileTap={{ opacity: 0.8, scale: .9 }}
+            transition={{ type: "spring", stiffness: 120, damping: 10 }}
             className="gradientBg p-[2px] w-max"
           >
-            <button className="py-3 px-7 text-white btnGradient font-bold button">
+            <button 
+            onClick={smoothScrollToContact}
+            className="py-3 px-7 text-white btnGradient font-bold button">
               Entre em contato
             </button>
           </motion.div>
           <div className="flex justify-center items-center gap-6">
-            <div className="h-[2px] bg-black w-8 opacity-20 rounded-md" />
-            <span className="text-sm text-black opacity-20 font-medium">
+            <div className="h-[2px] bg-black w-8 opacity-30 rounded-md" />
+            <span className="text-sm text-black opacity-30 font-medium">
               ou
             </span>
-            <div className="h-[2px] bg-black w-8 opacity-20 rounded-md" />
+            <div className="h-[2px] bg-black w-8 opacity-30 rounded-md" />
           </div>
           <div className="flex flex-col justify-center items-center gap-2">
-            <a href="" className="font-bold text-base -mb-1">
+            <a onClick={smoothScrollToAbout} className="font-bold text-base -mb-1 opacity-70 cursor-pointer">
               Saiba mais
             </a>
             <Image
               src={arrowDown}
               alt="arrow down"
-              className="w-[20px] opacity-20"
+              className="w-[15px] opacity-70"
+              draggable="false"
             />
           </div>
         </motion.div>

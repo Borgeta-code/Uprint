@@ -9,7 +9,9 @@ import Instagram from "../public/instagram.svg";
 export default function Contact() {
   return (
     <>
-      <section className="h-screen flex flex-col justify-center items-center bg-cover bg-no-repeat relative ">
+      <section
+      id="contact"
+      className="h-screen flex flex-col justify-center items-center bg-cover bg-no-repeat relative ">
         <Title title="Entre em contato" />
 
         <div className="flex flex-col md:flex-row gap-10 mt-[110px]">
@@ -39,18 +41,18 @@ export default function Contact() {
               />
             </div>
             <div className="flex justify-center items-center gap-4">
-              <div className="h-[2px] bg-black w-6 opacity-20 rounded-md" />
-              <span className="text-sm text-black opacity-20 font-medium">
+              <div className="h-[2px] bg-black w-6 opacity-30 rounded-md" />
+              <span className="text-sm text-black opacity-30 font-medium">
                 ou
               </span>
-              <div className="h-[2px] bg-black w-6 opacity-20 rounded-md" />
+              <div className="h-[2px] bg-black w-6 opacity-30 rounded-md" />
             </div>
             <div className="flex gap-2">
-              <span className="font-bold text-xl">(11) 95794-3978</span>
+              <span className="font-bold text-base">(11) 95794-3978</span>
               <Image
                 src={Telephone}
                 alt="Telefone"
-                className="w-6"
+                className="w-4"
                 draggable="false"
               />
             </div>
@@ -59,7 +61,7 @@ export default function Contact() {
           {/* formulario */}
 
           <div className="flex flex-col justify-center items-center gap-5">
-            <div className="flex gap-2">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-2">
               {/* Nome */}
               <div className="gradientInput p-[2px] w-max relative">
                 <span className="absolute text-xs font-bold -top-3 left-6 p-1 bg-white text-black">
@@ -67,7 +69,7 @@ export default function Contact() {
                 </span>
                 <input
                   type="text"
-                  className="px-3 py-2 text-black rounded-[13px] bg-white outline-0 w-[200px]"
+                  className="px-3 py-2 text-black rounded-[13px] bg-white outline-0 w-[90vw] sm:w-[200px]"
                 />
               </div>
 
@@ -78,7 +80,7 @@ export default function Contact() {
                 </span>
                 <input
                   type="text"
-                  className="px-3 py-2 text-black rounded-[13px] bg-white outline-0 w-[200px]"
+                  className="px-3 py-2 text-black rounded-[13px] bg-white outline-0 w-[90vw] sm:w-[200px]"
                 />
               </div>
             </div>
@@ -92,7 +94,7 @@ export default function Contact() {
               <textarea
                 cols={30}
                 rows={5}
-                className="px-3 py-2 text-black rounded-[18px] bg-white outline-0 resize-none w-[400px]"
+                className="px-3 py-2 text-black rounded-[18px] bg-white outline-0 resize-none w-[90vw] sm:w-[400px]"
               />
             </div>
 
