@@ -12,12 +12,12 @@ export default function Header() {
         <nav className="relative w-full flex justify-center items-center p-4">
           <Image src={logo} alt="logo" className="w-[100px]" />
           <div className="absolute right-2">
-            <Hamburger
+            {/* <Hamburger
               toggled={isOpen}
               toggle={setOpen}
               rounded={true}
               color="#ffffff"
-            />
+            /> */}
           </div>
         </nav>
       </header>

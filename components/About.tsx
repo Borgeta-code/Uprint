@@ -31,9 +31,10 @@ export default function About() {
 
   return (
     <>
-      <section 
-      id="about"
-      className="h-screen flex flex-col justify-center items-center bg-cover bg-no-repeat relative ">
+      <section
+        id="about"
+        className="h-screen flex flex-col justify-center items-center bg-cover bg-no-repeat relative "
+      >
         <Title title="Sobre" />
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -72,7 +73,7 @@ export default function About() {
             className="flex flex-col justify-center items-center gap-2"
           >
             <Image src={speed} alt="velocidade" className="w-12 md:w-20" />
-            <span className="font-semibold text-[#c1c1c1]">Velocidade.</span>
+            <span className="font-semibold text-black">Rapidez.</span>
           </motion.li>
 
           <motion.li variants={item}>
@@ -95,7 +96,7 @@ export default function About() {
             className="flex flex-col justify-center items-center gap-2"
           >
             <Image src={efficiency} alt="eficiência" className="w-12 md:w-20" />
-            <span className="font-semibold text-[#c1c1c1]">Eficiência.</span>
+            <span className="font-semibold text-black">Eficiência.</span>
           </motion.li>
 
           <motion.li variants={item}>
@@ -118,7 +119,7 @@ export default function About() {
             className="flex flex-col justify-center items-center gap-2"
           >
             <Image src={quality} alt="qualidade" className="w-12 md:w-20" />
-            <span className="font-semibold text-[#c1c1c1]">Qualidade.</span>
+            <span className="font-semibold text-black">Qualidade.</span>
           </motion.li>
         </motion.ul>
       </section>
